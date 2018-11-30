@@ -13,3 +13,8 @@ revloute joints only.
 The output are saved as functions in C++ (.cpp  .h matrix library Eigen) and matlab .m. \n \n
 
 To Do: Add support for different joints, print out matrices in python format, add dynamics
+
+## Argument is not an mpz 
+It seems that there is an issue with the Python described [https://github.com/sympy/sympy/issues/12895](here) 
+The quick fix is to set an environment variable in current session using:
+```  export MPMATH_NOGMPY=1```
